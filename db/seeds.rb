@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+  trainings = Training.create([{ name: 'Cycling'}, { name: 'Aerobics'}])
+
+  {"ashley@example.com" => "password",
+  "bill@example.com" => "password"
+  }.each do |email, password|
+  User.create(email: email.dup, password: password)
+end
